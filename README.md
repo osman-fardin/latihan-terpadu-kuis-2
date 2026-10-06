@@ -1,12 +1,11 @@
-# Latihan Kuis 2 PBP
+# Latihan Terpadu Kuis 2 PBP
 
-Kerangka latihan untuk Kuis 2 Pemrograman Berbasis Platform: autentikasi berbasis
-*session*, JavaScript dan AJAX, serta HTMX. Petunjuk setiap drill ada di modul
-latihan.
+Kerangka latihan terpadu Daftar Bacaan untuk Kuis 2 Pemrograman Berbasis
+Platform: autentikasi berbasis *session*, JavaScript dan AJAX, serta HTMX.
 
 ```bash
-git clone https://github.com/aldofahrezy/latihan-quiz-2.git latihan-kuis-2
-cd latihan-kuis-2
+git clone https://github.com/aldofahrezy/latihan-quiz-2.git terpadu
+cd terpadu
 
 python -m venv env
 source env/bin/activate        # macOS atau Linux

@@ -1,29 +1,29 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Catatan Saya{% endblock %}
+{% block title %}Daftar Bacaan Saya{% endblock %}
 {% block content %}
 <header class="card">
-  <h1>Catatan milik {{ username }}</h1>
+  <h1>Daftar bacaan milik {{ username }}</h1>
   <p class="muted">Login terakhir: {{ last_login }}</p>
   <p><a href="{% url 'main:logout' %}">Logout</a></p>
 </header>
 
 <section class="card">
-  <h2>Tambah Catatan</h2>
-  <form id="note-form">
+  <h2>Tambah Buku</h2>
+  <form id="book-form">
     {% csrf_token %}
-    <p><label for="title">Judul</label><br><input id="title" name="title" maxlength="100"></p>
-    <p><label for="content">Isi</label><br><textarea id="content" name="content"></textarea></p>
+    <p><label for="title">Judul</label><br><input id="title" name="title" maxlength="120"></p>
+    <p><label for="author">Penulis</label><br><input id="author" name="author" maxlength="80"></p>
     <p id="form-error" class="error"></p>
     <button type="submit" class="btn">Simpan</button>
   </form>
 </section>
 
 <section>
-  <h2>Daftar Catatan</h2>
-  <ul id="note-list"></ul>
+  <h2>Daftar Buku</h2>
+  <ul id="book-list"></ul>
 </section>
 {% endblock %}
 {% block scripts %}
-<script src="{% static 'js/notes.js' %}"></script>
+<script src="{% static 'js/books.js' %}"></script>
 {% endblock %}
